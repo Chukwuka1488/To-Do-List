@@ -1,15 +1,11 @@
 let input = prompt("What would you like to do?");
-
 const toDos = ["Morning Prayers", "Freshen Up"];
-
 while (input !== "quit" && input !== "q") {
   if (input === "list") {
     console.log("****************************");
-
     for (let i = 0; i < toDos.length; i++) {
       console.log(`${i}: ${toDos[i]}`);
     }
-
     console.log("****************************");
   } else if (input === "new") {
     const newTodo = prompt("Ok, what is the new To-Do");
@@ -28,5 +24,4 @@ while (input !== "quit" && input !== "q") {
   }
   input = prompt("What would you like to do?");
 }
-
 console.log("OK, QUIT THE APP");
